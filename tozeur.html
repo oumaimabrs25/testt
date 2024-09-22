@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/mountain.jpg">
+    <title>You May Do - Tozeur</title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="tozeur.css">
+</head>
+<body>
+    <nav>
+        <div class="nav__header">
+            <div class="nav__logo">
+                <a href="index.html" class="logo">YouMay <span id="doLogo">Do</span></a>
+            </div>
+            <div class="nav__menu__btn" id="menu-btn">
+                <i class="ri-menu-line"></i>
+            </div>
+        </div>
+
+        <ul class="nav__links" id="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#sitechbika">Chbika</a></li>
+            <li><a href="#sitetamaghza">Tamaghza</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <button id="theme-toggle" aria-label="Toggle Dark/Light Mode">
+      <i class="ri-moon-line" id="theme-icon"></i>
+    </button>
+
+<section id="sitechbika">
+  <div class="content-box">
+    <article>
+      <h2>Chbika</h2>
+      <div class="image-container">
+        <img src="img/chbika.jpg" alt="Chbika" class="image">
+        <p>Chbika is a mountain oasis in southern Tunisia, located in the Tozeur governorate. It was once a Roman outpost on the Saharan limes, used for signaling and communication.</p>
+      </div>
+    </article>
+
+    <article>
+      <h2>Archaeological Sites</h2>
+      <div class="image-container">
+        <img src="img/chbikaarch.jpg" alt="Chbika Archaeological Site" class="image">
+        <p>Chbika features ancient Roman ruins. The area was historically vital for its water sources and desert location, offering a unique climate and rich history.</p>
+      </div>
+    </article>
+  </div>
+</section>
+
+<section id="activities">
+  <h2>Activities</h2>
+  <div class="activity-grid">
+    <div class="activity">
+      <h4>Cycling</h4>
+      <p>Enjoy cycling through scenic landscapes and nature trails.</p>
+    </div>
+    <div class="activity">
+      <h4>Sunbathing</h4>
+      <p>Relax by the pool or beach, soaking up the sun and unwinding.</p>
+    </div>
+    <div class="activity">
+      <h4>Camping</h4>
+      <p>Experience the great outdoors, whether it's summer or winter.</p>
+    </div>
+    <div class="activity">
+      <h4>Campfire</h4>
+      <p>Enjoy a cozy evening around a campfire, perfect for warmth and bonding.</p>
+    </div>
+  </div>
+</section>
+
+
+<section id="map">
+  <h2>Location</h2>
+  <div class="map-container">
+    <iframe src="https://maps.google.com/maps?q=tozeur%20chbika&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" allowfullscreen></iframe>
+  </div>
+</section>
+
+<section id="sitetamaghza">
+  <div class="content-box">
+    <article>
+      <h2>Tamaghza</h2>
+      <div class="image-container">
+        <img src="img/tama.jpg" alt="Tamaghza" class="image">
+        <p>Tamaghza is a mountain oasis located in southwestern Tunisia. It’s about 450 km from Tunis and 70 km from Tozeur. Scenes from the film "The English Patient" were filmed here.</p>
+      </div>
+    </article>
+
+    <article>
+      <h2>Archaeological Sites</h2>
+      <div class="image-container">
+        <img src="img/star.jpg" alt="Bezereos Archaeological Site" class="image">
+        <p>Bezereos was a Roman outpost in the Limes Tripolitanus, tasked with security and surveillance. It sits on a hill with a strategic view in the southern Kébili governorate.</p>
+      </div>
+    </article>
+  </div>
+</section>
+
+<footer class="footer">
+    <div class="section__container footer__container">
+        <div class="footer__col">
+            <div class="footer__logo">
+                <a href="#" class="logo">YouMay <span id="doLogo">Do</span></a>
+            </div>
+            <p>Discover unique hiking routes, suitable for all levels, and explore nature at your own pace with YouMay Do.</p>
+            <h4>Connect with us</h4>
+            <ul class="footer__socials">
+                <li><a href="#"><i class="ri-facebook-circle-fill"></i></a></li>
+                <li><a href="#"><i class="ri-instagram-fill"></i></a></li>
+                <li><a href="#"><i class="ri-twitter-fill"></i></a></li>
+            </ul>
+        </div>
+        <div class="footer__col">
+            <h4>Destinations</h4>
+            <ul class="footer__links">
+              <li><a href="bizerte.html">Bizerte</a></li>
+              <li><a href="tozeur.html">Tozeur</a></li>
+              <li><a href="nabeul.html">Nabeul</a></li>
+            </ul>
+        </div>
+        <div class="footer__col">
+            <h4>Our Activities</h4>
+            <ul class="footer__links">
+                <li><a href="">Trekking</a></li>
+                <li><a href="">Peak Climbing</a></li>
+                <li><a href="">Biking</a></li>
+                <li><a href="">Paddle</a></li>
+                <li><a href="">Cultural Tour</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="footer__bar"> 
+        copyright © 2024 YouMay Do. All rights reserved.
+    </div>
+</footer>
+
+
+
+<script>
+  const themeToggleBtn = document.getElementById('theme-toggle');
+  const body = document.body;
+
+  themeToggleBtn.addEventListener('click', () => {
+    body.classList.toggle('dark-mode');
+    const themeIcon = themeToggleBtn.querySelector('i');
+    themeIcon.classList.toggle('ri-sun-line');
+    themeIcon.classList.toggle('ri-moon-line');
+  });
+</script>
+
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="https://unpkg.com/scrollreveal"></script>
+<script src="script.js" defer></script>
+</body>
+</html>

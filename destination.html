@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/mountain.jpg">
+    <title>You May Do - Destination</title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="destination.css">
+</head>
+<body>
+    <nav>
+        <div class="nav__header">
+            <div class="nav__logo">
+                <a href="index.html" class="logo">YouMay <span id="doLogo">Do</span></a>
+            </div>
+            <div class="nav__menu__btn" id="menu-btn">
+                <i class="ri-menu-line"></i>
+            </div>
+        </div>
+
+        <ul class="nav__links" id="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="bizerte.html">Bizerte</a></li>
+            <li><a href="tozeur.html">Tozeur</a></li>
+            <li><a href="nabeul.html">Nabeul</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <button id="theme-toggle" aria-label="Toggle Dark/Light Mode">
+        <i class="ri-moon-line" id="theme-icon"></i>
+      </button>
+
+
+<header class="header">
+    <h1>Explore Tunisia</h1>
+</header>
+
+
+
+
+
+
+
+<section class="destination-section">
+    <div class="destination-content">
+        <h2 class="destination-heading">Discover the Beauty of Tunisia</h2>
+        <p class="destination-description">Very close to Europe, and yet so exotic, Tunisia... From the Mediterranean to the South, from desert sands to snow mountains, a place for trekking, adventure, and active discovery!</p>
+
+        <div class="destination-container">
+            <div class="destination-item">
+                <div class="image-container">
+                    <img src="img/im3.jpg" class="destination-image" alt="Bizerte">
+                    <p class="image-title">Bizerte - Mediterranean Coast</p>
+                </div>
+                <div class="destination-text">
+                    <p class="destination-description">Bizerte, known for its stunning Mediterranean coastline, is a beautiful port city with rich history and vibrant markets. Enjoy the fusion of modern and traditional life in this picturesque location.</p>
+                </div>
+            </div>
+
+            <div class="destination-item">
+                <div class="image-container">
+                    <img src="img/im4.jpg" class="destination-image" alt="Tozeur">
+                    <p class="image-title">Tozeur - Oasis in the Desert</p>
+                </div>
+                <div class="destination-text">
+                    <p class="destination-description">Tozeur is a desert gem known for its vast palm groves and centuries-old architecture. It offers unique landscapes and access to the great Sahara, with historic sights and cultural richness.</p>
+                </div>
+            </div>
+
+            <div class="destination-item">
+                <div class="image-container">
+                    <img src="img/im1.jpg" class="destination-image" alt="Nabeul">
+                    <p class="image-title">Nabeul - Sun and Sea</p>
+                </div>
+                <div class="destination-text">
+                    <p class="destination-description">Nabeul, a coastal city in northeastern Tunisia, offers vibrant beaches and a rich tradition of pottery and crafts. Perfect for beach lovers and cultural explorers alike.</p>
+                </div>
+            </div>
+
+            <div class="destination-item">
+                <div class="image-container">
+                    <img src="img/im2.jpg" class="destination-image" alt="Tunisia">
+                    <p class="image-title">Tunisia - Historic Landscapes</p>
+                </div>
+                <div class="destination-text">
+                    <p class="destination-description">Tunisia offers diverse landscapes, from Mediterranean beaches to ancient ruins. A perfect destination for history enthusiasts and nature lovers alike.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="destination-quote">
+        <h1>"Every step brings us closer."</h1>
+        <p>It is taking the time to observe, understand, and feel. But it is also and above all about exchange, meeting others, sharing, and sometimes making friends. And ultimately, finding yourself.</p>
+    </div>
+</section>
+
+
+
+
+
+
+
+
+<footer class="footer">
+    <div class="section__container footer__container">
+        <div class="footer__col">
+            <div class="footer__logo">
+                <a href="#" class="logo">YouMay <span id="doLogo">Do</span></a>
+            </div>
+            <p>Discover unique hiking routes, suitable for all levels, and explore nature at your own pace with YouMay Do.</p>
+            <h4>Connect with us</h4>
+            <ul class="footer__socials">
+                <li><a href="#"><i class="ri-facebook-circle-fill"></i></a></li>
+                <li><a href="#"><i class="ri-instagram-fill"></i></a></li>
+                <li><a href="#"><i class="ri-twitter-fill"></i></a></li>
+            </ul>
+        </div>
+        <div class="footer__col">
+            <h4>Destinations</h4>
+            <ul class="footer__links">
+                <li><a href="bizerte.html">Bizerte</a></li>
+                <li><a href="tozeur.html">Tozeur</a></li>
+                <li><a href="nabeul.html">Nabeul</a></li>
+            </ul>
+        </div>
+        <div class="footer__col">
+            <h4>Our Activities</h4>
+            <ul class="footer__links">
+                <li><a href="">Trekking</a></li>
+                <li><a href="">Peak Climbing</a></li>
+                <li><a href="">Biking</a></li>
+                <li><a href="">Paddle</a></li>
+                <li><a href="">Cultural Tour</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="footer__bar"> 
+        copyright © 2024 YouMay Do. All rights reserved.
+    </div>
+</footer>
+
+
+
+
+<script>
+    const themeToggleBtn = document.getElementById('theme-toggle');
+    const body = document.body;
+  
+    themeToggleBtn.addEventListener('click', () => {
+      body.classList.toggle('dark-mode');
+      const themeIcon = themeToggleBtn.querySelector('i');
+      themeIcon.classList.toggle('ri-sun-line');
+      themeIcon.classList.toggle('ri-moon-line');
+    });
+  </script>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="https://unpkg.com/scrollreveal"></script>
+<script src="script.js" defer></script>
+</body>
+</html>

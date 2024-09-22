@@ -1,0 +1,208 @@
+
+body {
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+  color: var(--text-color);
+  background-color: var(--bg-color);
+  transition: background-color 0.3s ease, color 0.3s ease;
+  text-align: center;
+  
+}
+
+:root {
+  --bg-color: #ffffff;
+  --text-color: #333333;
+  --shadow-color: rgba(0, 0, 0, 0.1);
+}
+
+.dark-mode {
+  --bg-color: #000000;
+  --text-color: #00CCDD;
+  --shadow-color: rgba(0, 204, 221, 0.5);
+}
+
+main {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 40px 0;
+}
+
+.content img {
+  width: 100%;
+  max-width: 700px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 15px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.content img:hover {
+  transform: scale(1.05); 
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+  
+}
+
+.content p {
+  max-width: 700px;
+  text-align: center;
+  color: #555;
+  line-height: 1.8;
+  padding: 20px 0;
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+
+.content:hover p {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
+.activities {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  padding: 20px 0;
+  justify-items: center;
+}
+
+.activity {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 250px;
+  text-align: center;
+  position: relative;
+  transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+  overflow: hidden;
+}
+
+.activity h4 {
+  font-size: 1.5rem;
+  color:  #00CCDD;
+  margin-bottom: 15px;
+}
+
+.activity p {
+  font-size: 1rem;
+  color: #333;
+}
+
+.activity:hover {
+  transform: translateY(-10px);
+  background-color:  #00CCDD;
+  color: #fff;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+.activity:hover h4, .activity:hover p {
+  color: #fff;
+}
+
+
+.mapouter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 50px 0;
+}
+
+.gmap_canvas {
+  width: 90%;  
+  max-width: 1100px; 
+  border-radius: 15px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.gmap_canvas iframe {
+  width: 100%;  
+  height: 500px;
+  border-radius: 15px;
+  border: 0;
+}
+
+.dark-mode p {
+  color: white; 
+
+}
+
+.dark-mode .activities p {
+  color: black; 
+  
+}
+
+
+.dark-mode .footer h4{
+  color: white;
+}
+
+.dark-mode .footer p{
+  color: white;
+}
+
+
+.dark-mode .footer #doLogo{
+  color: white;
+}
+
+.dark-mode .nav__logo #doLogo{
+  color: white;
+}
+
+.dark-mode .content{
+  box-shadow: 0 4px 8px var(--shadow-color);
+}
+
+
+
+
+@media (max-width: 100%) {
+  .content img, .gmap_canvas iframe {
+      max-width: 100%; 
+      height: 300px;
+  }
+
+  .activities {
+      grid-template-columns: 1fr; 
+  }
+
+  .activity {
+      max-width: 100%;
+  }
+}
+
+
+#theme-toggle {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background-color: var(--text-color);
+  color: var(--bg-color);
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+#theme-toggle:hover {
+  transform: rotate(180deg);
+  transition: transform 0.5s;
+}
+
